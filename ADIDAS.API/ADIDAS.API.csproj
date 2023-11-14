@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<UserSecretsId>d9dc22ab-6d03-490a-bd06-590e438d0102</UserSecretsId>
+		<NoWarn>$(NoWarn);NU1701;1591;</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
+		<PackageReference Include="Facebook" Version="7.0.6" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Azure.NotificationHubs" Version="4.0.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.53.0.62665">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+		<PackageReference Include="Google.Apis.YouTube.v3" Version="1.47.0.2008" />
+		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+		<PackageReference Include="System.ServiceModel.Duplex" Version="4.10.*" />
+		<PackageReference Include="System.ServiceModel.Federation" Version="4.10.*" />
+		<PackageReference Include="System.ServiceModel.Http" Version="4.10.*" />
+		<PackageReference Include="System.ServiceModel.NetTcp" Version="4.10.*" />
+		<PackageReference Include="System.ServiceModel.Security" Version="4.10.*" />
+		<PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ADIDAS.Model\ADIDAS.Model.csproj" />
+		<ProjectReference Include="..\ADIDAS.Service\ADIDAS.Service.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <WCFMetadata Include="Connected Services" />
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties properties_4launchsettings_1json__JsonSchema="" />
+		</VisualStudio>
+	</ProjectExtensions>
+
+
+</Project>
